@@ -1,0 +1,27 @@
+<?php
+
+// DO NOT CHANGE THESE
+
+$parts = explode('/', $_SERVER['PHP_SELF']);
+$file = $parts[count($parts) - 1];
+
+// SET TIME ZONE
+
+date_default_timezone_set('America/New_York');
+
+// UNIVERSAL MYSQL PARAMETERS
+
+$mysql_host = 'localhost';
+$mysql_dtbs = 'bwrss';
+$mysql_char = 'utf8';
+$createmode = 'cli';		// Either cli or web
+
+// CONDITIONAL MYSQL PARAMETERS
+
+$mysql_user_query = 'bwrss_query';
+$mysql_pass_query = 'bwrss_query';
+
+$mysql_user_insert = 'bwrss_insert';
+$mysql_pass_insert = 'bwrss_insert';
+
+?>
