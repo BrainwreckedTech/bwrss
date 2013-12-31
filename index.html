@@ -7,24 +7,22 @@
 
 <body style="font-family:sans-serif;">
 
-<img style="float:left;margin-right:8px;" src="notebook_64.png" alt="">
+<img src="bwrss-head.png" alt="BrainwreckedRSS">
 
-<h1>Brainwrecked RSS</h1>
-
-<h2>What Does It Do?</h2>
+<h1>What Does It Do?</h1>
 
 <p>BWRSS creates
 <a href="http://validator.w3.org/feed/check.cgi?url=http%3A%2F%2Frss.bw-tech.net%2Ffeed.php%3Ff%3Djfsmon">
 completely-valid RSS feeds</a> from a MySQL-compatible database backend.</p>
 
-<h2>How Does It Do It?</h2>
+<h1>How Does It Do It?</h1>
 
 <p><code>create_feed.php</code> creates a feed.  For now, this only works on the command line.</p>
 <p><code>create_article.php</code> creates and article.  For now, this only works on the command line.</p>
 <p><code>feed.php</code> renders the RSS feed.
 Example: <a href="http://rss.bw-tech.net/feed.php?f=jfsmon">http://rss.bw-tech.net/feed.php?f=jfsmon</a></p>
 
-<h2>What's this command line crap?</h2>
+<h1>What's this command line crap?</h1>
 
 <p>Due to security concerns, I've started with command line scripting
 first.  PHP can detect the presence of STDIN, which is available when
@@ -37,11 +35,11 @@ even script the running of the script.</p>
 <p>Not everyone can create and use an SSL cert.  Rest assured that I
 want to get the scripts working as you would expect a PHP web app to work.</p>
 
-<h2>What is the scope of this project?</h2>
+<h1>What is the scope of this project?</h1>
 
 <p>BWRSS is meant for a single entity to operate. For now, there's a hard-set limit of 255 feeds total and 86,400 articles per day.</p>
 
-<h2>How Do I Install BWRSS?</h2>
+<h1>How Do I Install BWRSS?</h1>
 
 <ol>
   <li>Make sure you have git installed on your server.</li>
@@ -53,11 +51,11 @@ want to get the scripts working as you would expect a PHP web app to work.</p>
    <li><code>php initialize.php | mysql -u [user] -p</code></li>
 </ol>
 
-<h2>How Do I Create A Feed?</h2>
+<h1>How Do I Create A Feed?</h1>
 
 <code>php [path]/create_feed.php [shortname] [title] [description]</code>
 
-<h2>How Do I Create An Article?</h2>
+<h1>How Do I Create An Article?</h1>
 
 <code>php [path]/create_article.php [shortname] [title] [author] [text] [time]</code>
 <p>NOTE: <code>[time]</code> must either be formatted
